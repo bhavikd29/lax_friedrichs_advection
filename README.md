@@ -48,18 +48,13 @@ what the numerical scheme is validated against.
 
 ## Numerical method
 
-Writing the system as $U_t + F(U)_x = 0$ with $U = (\rho, u)$ and flux
-$F(U) = (u, \rho)$, the **Lax–Friedrichs** update for interior node $i$ is
+Writing the system as $U_t + F(U)_x = 0$ with $U = (\rho, u)$ and flux $F(U) = (u, \rho)$, the **Lax–Friedrichs** update for interior node $i$ is
 
 $$
-U_i^{n+1} = \frac{1}{2}\left(U_{i+1}^n + U_{i-1}^n\right)
-- \frac{\Delta t}{2\,\Delta x}\left(F_{i+1}^n - F_{i-1}^n\right)
+U_i^{n+1} = \frac{1}{2}\left(U_{i+1}^n + U_{i-1}^n\right) - \frac{\Delta t}{2\,\Delta x}\left(F_{i+1}^n - F_{i-1}^n\right)
 $$
 
-i.e. neighbour-averaging plus a centred flux difference with coefficient
-$a = \Delta t / (2\,\Delta x)$. The averaging term supplies the numerical
-diffusion that stabilises the scheme (at the cost of smearing discontinuities).
-Lax–Friedrichs is **first-order accurate**.
+i.e. neighbour-averaging plus a centred flux difference with coefficient $a = \Delta t / (2\,\Delta x)$. The averaging term supplies the numerical diffusion that stabilises the scheme (at the cost of smearing discontinuities). Lax–Friedrichs is **first-order accurate**.
 
 ### The Courant (CFL) condition
 
