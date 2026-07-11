@@ -1,0 +1,10 @@
+numpy>=1.21
+matplotlib>=3.4
+
+# The wave-propagation animation in the notebook is saved to figures/.
+# If the `ffmpeg` binary is installed it is written as an .mp4; otherwise the
+# notebook automatically falls back to a .gif via matplotlib's built-in Pillow
+# writer (Pillow ships as a matplotlib dependency). For .mp4 output install
+# ffmpeg separately, e.g.:
+#   macOS:         brew install ffmpeg
+#   Debian/Ubuntu: sudo apt-get install ffmpeg
