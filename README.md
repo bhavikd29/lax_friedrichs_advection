@@ -1,6 +1,6 @@
 # 1D Linear Advection System — Lax–Friedrichs Scheme
 
-A small, self-contained computational-physics project that solves a coupled
+A small, self-contained Computational Physics project that solves a coupled
 linear hyperbolic PDE system with the **Lax–Friedrichs** finite-difference
 scheme, validates it against an exact analytical solution, and quantifies the
 scheme's **order of accuracy** with a grid-refinement convergence study.
