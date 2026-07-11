@@ -28,8 +28,6 @@ constant, and rho, u are recovered by inverting the transform:
 This exact solution is what the Lax-Friedrichs scheme is validated against.
 """
 
-from __future__ import annotations
-
 import numpy as np
 
 # Left/right constant states of the Riemann problem (must match solver.py).
@@ -37,7 +35,7 @@ RHO_LEFT, RHO_RIGHT = 0.1, 10.0
 U_LEFT, U_RIGHT = 2.0, 1.0
 
 
-def analytical_solution(x: np.ndarray, t_final: float) -> tuple[np.ndarray, np.ndarray]:
+def analytical_solution(x, t_final):
     """Evaluate the exact ``(rho, u)`` on grid ``x`` at time ``t_final``.
 
     Parameters
