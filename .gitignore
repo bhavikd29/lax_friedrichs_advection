@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated animation artifacts (regenerable by running the notebook)
+*.mp4
+*.gif
+
+# OS junk
+.DS_Store
